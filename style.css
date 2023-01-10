@@ -1,0 +1,71 @@
+body,html {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(file:///C:/Users/HP/Documents/Prgramming%20Projects/Startup!/img/header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  color: #e2dbdb; 
+  font-size: 3rem ;
+}
+
+.buffer{
+  height: 12rem;
+}
+
+hr{
+  margin: 20px auto;
+  color: #F05F44;
+  border: 1px solid #F05F44;
+  max-width: 65px;
+  opacity: 1;  
+  }
+
+.btn{
+  font-weight: 700;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color:#E9563D;
+  border-color: #E9563D;
+  
+}
+
+.btn:hover{
+  transform: scale(1.1) perspective(500px) rotateY(15deg);
+
+  background-color:#f14a2c;
+  border-color: #f14a2c;
+
+  transition: all 500ms;
+  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 0 0 5px rgba(236, 236, 236, 0.2);
+}
+
+.btn-xl{
+  padding: 1rem 2rem;
+  transform: perspective(500px) rotateY(-15deg);
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
