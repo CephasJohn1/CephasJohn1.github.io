@@ -18,7 +18,7 @@ h1{
   margin: 0 0.5rem;
 
   animation: bounce; 
-  animation-duration: 2s; 
+  animation-duration: 1s; 
 }
 
 .buffer{
